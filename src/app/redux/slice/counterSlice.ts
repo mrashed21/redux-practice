@@ -16,6 +16,7 @@ export const counterSlice = createSlice({
       state.value += 1;
     },
     decrement: (state) => {
+      if (state.value === 0) return;
       state.value -= 1;
     },
   },
