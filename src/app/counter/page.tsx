@@ -6,14 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { decrement, increment } from "../redux/slice/counterSlice";
 
 const Counter = () => {
-  // const [counter, setCounter] = useState(0);
-  // const increment = () => {
-  //   setCounter((p) => p + 1);
-  // };
-  // const decrement = () => {
-  //   if (counter === 0) return;
-  //   setCounter((p) => p - 1);
-  // };
   const dispatch = useDispatch();
   const count = useSelector((state: any) => state.counter.value);
   return (
